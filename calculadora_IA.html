@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <link rel="stylesheet" href="css/estilo_calculadora.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="calculos_consola.html">Cálculos en Consola</a>
+                    <a class="nav-link" href="dom.html">Modificación del DOM</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Apliaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="calculadora_IA.html">Calculadora</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- #encabezado-->
+    <h1 class="titulo">Calculadora JavaScript</h1>  
+    <div class="calculator">
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            <button onclick="appendValue(7)">7</button>
+            <button onclick="appendValue(8)">8</button>
+            <button onclick="appendValue(9)">9</button>
+            <button onclick="setOperation('+')">+</button>
+
+            <button onclick="appendValue(4)">4</button>
+            <button onclick="appendValue(5)">5</button>
+            <button onclick="appendValue(6)">6</button>
+            <button onclick="setOperation('-')">-</button>
+
+            <button onclick="appendValue(1)">1</button>
+            <button onclick="appendValue(2)">2</button>
+            <button onclick="appendValue(3)">3</button>
+            <button onclick="setOperation('*')">*</button>
+
+            <button onclick="appendValue(0)">0</button>
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="calculateResult()" class="equal">=</button>
+            <button onclick="setOperation('/')">/</button>
+        </div>
+    </div>
+
+    <!-- #pie de página-->
+    <footer> 
+        <div class="Pie_pag">
+            Bootcamp de Programación FullStack. <br>
+            Talento Tech Oriente-MinTic.<br>
+            Plantilla realizada por Erick Jimenez Riaño. &copy;
+        </div>
+    </footer>
+
+    <script src="JS/calculadora.js" defer></script>
+</body>
+</html>
